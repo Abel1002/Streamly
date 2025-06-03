@@ -252,7 +252,7 @@ function App() {
           
           <p className="text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
             Sistema multialgorítmico que aprende de tus gustos y te conecta con las películas perfectas para ti. 
-            Despliegue en <strong>Android, iOS y Web</strong>.
+            Disponible en <strong>Android, iOS y Web</strong>.
           </p>
 
           <ProjectStats />
@@ -272,8 +272,8 @@ function App() {
           </h2>
           
           <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Descubre cómo hemos revolucionado las recomendaciones cinematográficas con IA. 
-            Presentación completa ante CEOs sobre tecnología, algoritmos y resultados.
+            Presentación ejecutiva de 5 minutos realizada ante CEOs colaboradores con nuestro centro de estudios. 
+            Descubre cómo revolucionamos las recomendaciones cinematográficas con IA.
           </p>
           
           {/* Imagen clickeable de la presentación */}
@@ -308,31 +308,38 @@ function App() {
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start">
                   <Star className="text-red-400 mr-2 mt-1 flex-shrink-0" size={16} />
-                  <span>Análisis del problema y solución propuesta</span>
+                  <span>Objetivos del proyecto</span>
                 </li>
                 <li className="flex items-start">
                   <Brain className="text-red-400 mr-2 mt-1 flex-shrink-0" size={16} />
-                  <span>Arquitectura del sistema de IA multialgorítmico</span>
+                  <span>Arquitectura del sistema de IA Multialgorítmico</span>
                 </li>
                 <li className="flex items-start">
-                  <Play className="text-red-400 mr-2 mt-1 flex-shrink-0" size={16} />
-                  <span>Demostración en vivo de las aplicaciones</span>
+                  <Search className="text-red-400 mr-2 mt-1 flex-shrink-0" size={16} />
+                  <span>Explicación del sistema PLN Avanzado y Accesibilidad</span>
                 </li>
               </ul>
               <ul className="space-y-3 text-gray-300">
                 <li className="flex items-start">
-                  <FileText className="text-red-400 mr-2 mt-1 flex-shrink-0" size={16} />
-                  <span>Métricas de rendimiento y resultados</span>
+                  <Sparkles className="text-red-400 mr-2 mt-1 flex-shrink-0" size={16} />
+                  <span>Serendipia y gamificación</span>
                 </li>
                 <li className="flex items-start">
                   <Users className="text-red-400 mr-2 mt-1 flex-shrink-0" size={16} />
-                  <span>Segmentación de usuarios con clustering</span>
+                  <span>Conoce al equipo</span>
                 </li>
                 <li className="flex items-start">
-                  <Sparkles className="text-red-400 mr-2 mt-1 flex-shrink-0" size={16} />
-                  <span>Roadmap y futuras implementaciones</span>
+                  <FileText className="text-red-400 mr-2 mt-1 flex-shrink-0" size={16} />
+                  <span>Escalabilidad del proyecto</span>
                 </li>
               </ul>
+            </div>
+            
+            <div className="mt-6 p-4 bg-red-900/20 rounded-lg border border-red-600/30">
+              <p className="text-sm text-gray-300 italic text-center">
+                💼 <strong>Presentación ejecutiva de 5 minutos</strong> realizada ante CEOs colaboradores con nuestro centro de estudios, 
+                demostrando la viabilidad comercial y técnica del proyecto Streamly AI.
+              </p>
             </div>
           </div>
           
@@ -396,6 +403,145 @@ function App() {
               <Download size={20} className="mr-2" />
               Descargar PDF
             </a>
+          </div>
+        </div>
+      </AnimatedSection>
+
+      {/* Sección del Buscador PLN */}
+      <AnimatedSection className="py-20 md:py-32">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <Search size={80} className="mx-auto mb-8 text-red-500" style={{ color: logoColor }}/>
+            <h2 className="text-4xl md:text-6xl font-bold mb-8">
+              Buscador <span style={{ color: logoColor }}>PLN Inteligente</span>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Sistema avanzado de procesamiento de lenguaje natural que permite búsquedas 
+              inteligentes y flexibles a través de una arquitectura de agentes especializados.
+            </p>
+          </div>
+
+          {/* Imagen del buscador */}
+          <div className="mb-12 max-w-4xl mx-auto">
+            <div className="relative overflow-hidden rounded-2xl border-2 border-red-600/30 shadow-2xl">
+              <img 
+                src="/BuscadorPLN.png" 
+                alt="Sistema de Buscador PLN de Streamly" 
+                className="w-full h-auto"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+            </div>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {/* Arquitectura de Agentes */}
+            <div className="bg-gradient-to-br from-blue-800/20 to-blue-900/20 p-8 rounded-xl border border-blue-600/30">
+              <div className="flex items-center mb-6">
+                <Brain size={40} className="text-blue-400 mr-4" />
+                <h3 className="text-2xl font-bold text-white">Arquitectura de Agentes</h3>
+              </div>
+              <p className="text-gray-300 mb-4 leading-relaxed">
+                El corazón del sistema es un <strong>agente de búsqueda principal</strong> que analiza 
+                la consulta del usuario y la dirige al modelo especializado más adecuado.
+              </p>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                A diferencia de un enfoque LLM genérico, nuestro sistema de agentes permite 
+                tratar cada tipo de búsqueda de forma específica, optimizando el procesamiento 
+                según las necesidades particulares de cada consulta.
+              </p>
+            </div>
+
+            {/* Modelos Especializados */}
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
+                <Sparkles size={32} className="text-red-400 mr-3" />
+                Modelos Especializados
+              </h3>
+
+              {/* Búsqueda por Título */}
+              <div className="bg-gradient-to-br from-purple-800/20 to-purple-900/20 p-6 rounded-xl border border-purple-600/30">
+                <h4 className="text-lg font-semibold text-purple-400 mb-2">🎬 Búsqueda por Título</h4>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Utiliza <strong>Sentence Transformers</strong> y <strong>FAISS</strong> para generar embeddings vectoriales. 
+                  Permite encontrar películas incluso con errores tipográficos o variaciones en la consulta.
+                </p>
+              </div>
+
+              {/* Búsqueda por Sinopsis */}
+              <div className="bg-gradient-to-br from-green-800/20 to-green-900/20 p-6 rounded-xl border border-green-600/30">
+                <h4 className="text-lg font-semibold text-green-400 mb-2">📝 Búsqueda por Sinopsis</h4>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Emplea el modelo <strong>paraphrase-multilingual-MiniLM-L12-v2</strong> para 
+                  búsquedas semánticas multiidioma basadas en descripciones de la trama.
+                </p>
+              </div>
+
+              {/* Búsqueda por Género */}
+              <div className="bg-gradient-to-br from-orange-800/20 to-orange-900/20 p-6 rounded-xl border border-orange-600/30">
+                <h4 className="text-lg font-semibold text-orange-400 mb-2">🎭 Búsqueda por Género</h4>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Sistema de <strong>3 niveles de relevancia</strong>: coincidencia exacta, 
+                  ampliada y parcial para máxima flexibilidad en los resultados.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Características Técnicas */}
+          <div className="mt-16 bg-gradient-to-r from-gray-800/50 to-gray-700/50 p-8 rounded-2xl border border-gray-600 backdrop-blur-sm max-w-4xl mx-auto">
+            <h3 className="text-2xl font-semibold mb-6 text-red-400 text-center">Características Técnicas Avanzadas</h3>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="text-lg font-semibold text-white mb-4">🔍 Capacidades de Búsqueda</h4>
+                <ul className="space-y-2 text-gray-300 text-sm">
+                  <li className="flex items-start">
+                    <span className="text-red-400 mr-2">•</span>
+                    <span>Búsquedas en múltiples idiomas</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-400 mr-2">•</span>
+                    <span>Tolerancia a errores tipográficos</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-400 mr-2">•</span>
+                    <span>Búsqueda semántica contextual</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-red-400 mr-2">•</span>
+                    <span>Procesamiento en tiempo real</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="text-lg font-semibold text-white mb-4">⚡ Tecnologías Utilizadas</h4>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-blue-600/20 text-blue-300 px-3 py-1 rounded-full text-xs border border-blue-600/30">
+                    Sentence Transformers
+                  </span>
+                  <span className="bg-purple-600/20 text-purple-300 px-3 py-1 rounded-full text-xs border border-purple-600/30">
+                    FAISS
+                  </span>
+                  <span className="bg-green-600/20 text-green-300 px-3 py-1 rounded-full text-xs border border-green-600/30">
+                    Embeddings Vectoriales
+                  </span>
+                  <span className="bg-orange-600/20 text-orange-300 px-3 py-1 rounded-full text-xs border border-orange-600/30">
+                    Arquitectura de Agentes
+                  </span>
+                  <span className="bg-pink-600/20 text-pink-300 px-3 py-1 rounded-full text-xs border border-pink-600/30">
+                    Procesamiento Multiidioma
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-6 p-4 bg-red-900/20 rounded-lg border border-red-600/30">
+              <p className="text-sm text-gray-300 text-center">
+                <strong>Ejemplo práctico:</strong> Si buscas "katana, espada, sable", el sistema entiende que son conceptos 
+                similares y encuentra películas relacionadas incluso si usan términos diferentes en sus metadatos.
+              </p>
+            </div>
           </div>
         </div>
       </AnimatedSection>
@@ -663,13 +809,15 @@ function App() {
             Streamly AI combina algoritmos de vanguardia con experiencia de usuario excepcional. 
             Descubre cómo estamos cambiando la forma de consumir entretenimiento.
           </p>
-          <button
-            onClick={() => document.getElementById('presentation-section')?.scrollIntoView({ behavior: 'smooth' })}
-            className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold py-4 px-10 rounded-xl text-xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105"
+          <a
+            href="https://www.canva.com/design/DAGpOH3wUyI/TwhERSMNOxFr8jUAvu0Nvg/edit?utm_content=DAGpOH3wUyI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold py-4 px-10 rounded-xl text-xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105"
           >
             <Sparkles size={24} className="inline mr-3" />
             Explorar el Proyecto
-          </button>
+          </a>
         </div>
       </AnimatedSection>
 
@@ -740,12 +888,6 @@ function App() {
             >
               Presentación Completa
             </a>
-            <button
-              onClick={() => document.getElementById('team-section')?.scrollIntoView({ behavior: 'smooth' })}
-              className="text-gray-500 hover:text-red-400 transition-colors"
-            >
-              Contacto del Equipo
-            </button>
           </div>
         </div>
       </footer>
