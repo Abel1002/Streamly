@@ -5,11 +5,12 @@ import { Mail, Linkedin, Github, ExternalLink, Users, FileText, Tv, Download, Pl
 const developers = [
   {
     name: "Miguel Ángel Vázquez",
-    title: "Lead Flutter Developer (Android/iOS) | Arquitectura de Apps, QA y Lanzamientos a Producción | Integración Backend (Python & Node.js)",
+    title: "Lead Flutter Developer (Android/iOS) | App Architecture, QA & Production Release Manager  | Backend Integration (Python & Node.js)",
     imageUrl: "/foto_miguel.png",
     email: "miguel.stucom@gmail.com",
     linkedin: "https://www.linkedin.com/in/miguel-%C3%A1ngel-v%C3%A1zquez-7b6260185/",
     github: "https://github.com/Miguelstucom",
+    cvUrl: "/CV_Miguel.pdf",
     description: "Especialista en desarrollo móvil multiplataforma y arquitectura de aplicaciones de alto rendimiento."
   },
   {
@@ -19,11 +20,12 @@ const developers = [
     email: "samirobayo04@gmail.com",
     linkedin: "https://www.linkedin.com/in/samuel-robayo-026408255/",
     github: "https://github.com/SJRobayo",
+    cvUrl: "/CV_Samuel.pdf",
     description: "Experto en desarrollo web full-stack y optimización de rendimiento backend."
   },
   {
     name: "Abel Pérez Jiménez",
-    title: "Lead Multiplatform Application Development (Windows, macOS, Android & iOS) with Maui Blazor .NET 9.0 | Developer of Specialized Business Management Applications in Azure & Dynamics 365 Environments",
+    title: "Lead Multiplatform Application (Windows, macOS, Android & iOS) Maui Blazor .NET 9.0 | Developer of Specialized Business Management Applications Azure & Dynamics 365 Environments",
     imageUrl: "/foto_abel.PNG",
     email: "abelst1002@gmail.com",
     linkedin: "https://www.linkedin.com/in/abel-p-7430a5255/",
